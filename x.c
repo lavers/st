@@ -662,7 +662,7 @@ brelease(XEvent *e)
 		return;
 	}
 
-	if (e->xbutton.button == Button2)
+	if (e->xbutton.button == Button2 || e->xbutton.button == Button3)
 		clippaste(NULL);
 	else if (e->xbutton.button == Button1)
 		mousesel(e, 1);
